@@ -1,0 +1,9 @@
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\bin\Release\GameCubeIsoAnalyzer.exe.config
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\bin\Release\GameCubeIsoAnalyzer.exe
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\bin\Release\GameCubeIsoAnalyzer.pdb
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.AboutBox1.resources
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.Form1.resources
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.Properties.Resources.resources
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.csproj.GenerateResource.Cache
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.exe
+F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.pdb
