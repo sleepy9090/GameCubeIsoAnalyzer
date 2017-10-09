@@ -25,51 +25,65 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxCustomCountryCode = new System.Windows.Forms.CheckBox();
+            this.checkBoxCustomMakerCode = new System.Windows.Forms.CheckBox();
+            this.checkBoxCustomConsoleID = new System.Windows.Forms.CheckBox();
+            this.comboBoxCountryCode = new System.Windows.Forms.ComboBox();
+            this.comboBoxMakerCode = new System.Windows.Forms.ComboBox();
+            this.comboBoxConsoleID = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxFileName = new System.Windows.Forms.TextBox();
+            this.labelFileName = new System.Windows.Forms.Label();
+            this.labelMaxFSTSize = new System.Windows.Forms.Label();
+            this.textBoxMaxFSTSize = new System.Windows.Forms.TextBox();
+            this.labelFSTSize = new System.Windows.Forms.Label();
+            this.textBoxFSTSize = new System.Windows.Forms.TextBox();
+            this.labelOffsetOfFST = new System.Windows.Forms.Label();
+            this.textBoxOffsetOfFST = new System.Windows.Forms.TextBox();
+            this.labelOffsetOfMainExecutable = new System.Windows.Forms.Label();
+            this.textBoxMainExecutableOffset = new System.Windows.Forms.TextBox();
+            this.labelAddressToLoadDebugMonitor = new System.Windows.Forms.Label();
+            this.textBoxAddressToLoadDebugMonitor = new System.Windows.Forms.TextBox();
+            this.labelDebugMonitorOffset = new System.Windows.Forms.Label();
+            this.textBoxOffsetOfDebugMonitor = new System.Windows.Forms.TextBox();
+            this.labelGameName = new System.Windows.Forms.Label();
+            this.textBoxGameName = new System.Windows.Forms.TextBox();
+            this.labelDVDMagicWord = new System.Windows.Forms.Label();
+            this.textBoxDVDMagicWord = new System.Windows.Forms.TextBox();
+            this.labelVersion = new System.Windows.Forms.Label();
+            this.textBoxVersion = new System.Windows.Forms.TextBox();
+            this.textBoxDiscID = new System.Windows.Forms.TextBox();
+            this.labelDiscID = new System.Windows.Forms.Label();
+            this.textBoxMakerCode = new System.Windows.Forms.TextBox();
+            this.labelMakerCode = new System.Windows.Forms.Label();
+            this.labelCountryCode = new System.Windows.Forms.Label();
+            this.textBoxCountryCode = new System.Windows.Forms.TextBox();
+            this.textBoxGameCode = new System.Windows.Forms.TextBox();
+            this.labelGameCode = new System.Windows.Forms.Label();
+            this.textBoxConsoleID = new System.Windows.Forms.TextBox();
+            this.labelConsoleID = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelConsoleID = new System.Windows.Forms.Label();
-            this.textBoxConsoleID = new System.Windows.Forms.TextBox();
-            this.labelGameCode = new System.Windows.Forms.Label();
-            this.textBoxGameCode = new System.Windows.Forms.TextBox();
-            this.textBoxCountryCode = new System.Windows.Forms.TextBox();
-            this.labelCountryCode = new System.Windows.Forms.Label();
-            this.labelMakerCode = new System.Windows.Forms.Label();
-            this.textBoxMakerCode = new System.Windows.Forms.TextBox();
-            this.labelDiscID = new System.Windows.Forms.Label();
-            this.textBoxDiscID = new System.Windows.Forms.TextBox();
-            this.textBoxVersion = new System.Windows.Forms.TextBox();
-            this.labelVersion = new System.Windows.Forms.Label();
-            this.textBoxDVDMagicWord = new System.Windows.Forms.TextBox();
-            this.labelDVDMagicWord = new System.Windows.Forms.Label();
-            this.textBoxGameName = new System.Windows.Forms.TextBox();
-            this.labelGameName = new System.Windows.Forms.Label();
-            this.textBoxOffsetOfDebugMonitor = new System.Windows.Forms.TextBox();
-            this.labelDebugMonitorOffset = new System.Windows.Forms.Label();
-            this.textBoxAddressToLoadDebugMonitor = new System.Windows.Forms.TextBox();
-            this.labelAddressToLoadDebugMonitor = new System.Windows.Forms.Label();
-            this.textBoxMainExecutableOffset = new System.Windows.Forms.TextBox();
-            this.labelOffsetOfMainExecutable = new System.Windows.Forms.Label();
-            this.textBoxOffsetOfFST = new System.Windows.Forms.TextBox();
-            this.labelOffsetOfFST = new System.Windows.Forms.Label();
-            this.textBoxFSTSize = new System.Windows.Forms.TextBox();
-            this.labelFSTSize = new System.Windows.Forms.Label();
-            this.textBoxMaxFSTSize = new System.Windows.Forms.TextBox();
-            this.labelMaxFSTSize = new System.Windows.Forms.Label();
-            this.labelFileName = new System.Windows.Forms.Label();
-            this.textBoxFileName = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.writeISOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBoxCustomCountryCode);
+            this.groupBox1.Controls.Add(this.checkBoxCustomMakerCode);
+            this.groupBox1.Controls.Add(this.checkBoxCustomConsoleID);
+            this.groupBox1.Controls.Add(this.comboBoxCountryCode);
+            this.groupBox1.Controls.Add(this.comboBoxMakerCode);
+            this.groupBox1.Controls.Add(this.comboBoxConsoleID);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.textBoxFileName);
             this.groupBox1.Controls.Add(this.labelFileName);
@@ -103,14 +117,332 @@
             this.groupBox1.Controls.Add(this.labelConsoleID);
             this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(600, 377);
+            this.groupBox1.Size = new System.Drawing.Size(600, 390);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // checkBoxCustomCountryCode
+            // 
+            this.checkBoxCustomCountryCode.AutoSize = true;
+            this.checkBoxCustomCountryCode.Location = new System.Drawing.Point(380, 122);
+            this.checkBoxCustomCountryCode.Name = "checkBoxCustomCountryCode";
+            this.checkBoxCustomCountryCode.Size = new System.Drawing.Size(128, 17);
+            this.checkBoxCustomCountryCode.TabIndex = 35;
+            this.checkBoxCustomCountryCode.Text = "Custom Country Code";
+            this.checkBoxCustomCountryCode.UseVisualStyleBackColor = true;
+            this.checkBoxCustomCountryCode.CheckedChanged += new System.EventHandler(this.checkBoxCustomCountryCode_CheckedChanged);
+            // 
+            // checkBoxCustomMakerCode
+            // 
+            this.checkBoxCustomMakerCode.AutoSize = true;
+            this.checkBoxCustomMakerCode.Location = new System.Drawing.Point(380, 96);
+            this.checkBoxCustomMakerCode.Name = "checkBoxCustomMakerCode";
+            this.checkBoxCustomMakerCode.Size = new System.Drawing.Size(122, 17);
+            this.checkBoxCustomMakerCode.TabIndex = 34;
+            this.checkBoxCustomMakerCode.Text = "Custom Maker Code";
+            this.checkBoxCustomMakerCode.UseVisualStyleBackColor = true;
+            this.checkBoxCustomMakerCode.CheckedChanged += new System.EventHandler(this.checkBoxCustomMakerCode_CheckedChanged);
+            // 
+            // checkBoxCustomConsoleID
+            // 
+            this.checkBoxCustomConsoleID.AutoSize = true;
+            this.checkBoxCustomConsoleID.Location = new System.Drawing.Point(380, 71);
+            this.checkBoxCustomConsoleID.Name = "checkBoxCustomConsoleID";
+            this.checkBoxCustomConsoleID.Size = new System.Drawing.Size(116, 17);
+            this.checkBoxCustomConsoleID.TabIndex = 33;
+            this.checkBoxCustomConsoleID.Text = "Custom Console ID";
+            this.checkBoxCustomConsoleID.UseVisualStyleBackColor = true;
+            this.checkBoxCustomConsoleID.CheckedChanged += new System.EventHandler(this.checkBoxCustomConsoleID_CheckedChanged);
+            // 
+            // comboBoxCountryCode
+            // 
+            this.comboBoxCountryCode.FormattingEnabled = true;
+            this.comboBoxCountryCode.Location = new System.Drawing.Point(117, 120);
+            this.comboBoxCountryCode.Name = "comboBoxCountryCode";
+            this.comboBoxCountryCode.Size = new System.Drawing.Size(250, 21);
+            this.comboBoxCountryCode.TabIndex = 32;
+            // 
+            // comboBoxMakerCode
+            // 
+            this.comboBoxMakerCode.FormattingEnabled = true;
+            this.comboBoxMakerCode.Location = new System.Drawing.Point(117, 94);
+            this.comboBoxMakerCode.Name = "comboBoxMakerCode";
+            this.comboBoxMakerCode.Size = new System.Drawing.Size(250, 21);
+            this.comboBoxMakerCode.TabIndex = 31;
+            // 
+            // comboBoxConsoleID
+            // 
+            this.comboBoxConsoleID.FormattingEnabled = true;
+            this.comboBoxConsoleID.Location = new System.Drawing.Point(117, 69);
+            this.comboBoxConsoleID.Name = "comboBoxConsoleID";
+            this.comboBoxConsoleID.Size = new System.Drawing.Size(250, 21);
+            this.comboBoxConsoleID.TabIndex = 30;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(9, 251);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(576, 129);
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBoxFileName
+            // 
+            this.textBoxFileName.Location = new System.Drawing.Point(81, 13);
+            this.textBoxFileName.Name = "textBoxFileName";
+            this.textBoxFileName.Size = new System.Drawing.Size(513, 20);
+            this.textBoxFileName.TabIndex = 1;
+            // 
+            // labelFileName
+            // 
+            this.labelFileName.AutoSize = true;
+            this.labelFileName.Location = new System.Drawing.Point(6, 16);
+            this.labelFileName.Name = "labelFileName";
+            this.labelFileName.Size = new System.Drawing.Size(52, 13);
+            this.labelFileName.TabIndex = 28;
+            this.labelFileName.Text = "Filename:";
+            // 
+            // labelMaxFSTSize
+            // 
+            this.labelMaxFSTSize.AutoSize = true;
+            this.labelMaxFSTSize.Location = new System.Drawing.Point(332, 228);
+            this.labelMaxFSTSize.Name = "labelMaxFSTSize";
+            this.labelMaxFSTSize.Size = new System.Drawing.Size(76, 13);
+            this.labelMaxFSTSize.TabIndex = 27;
+            this.labelMaxFSTSize.Text = "Max FST Size:";
+            // 
+            // textBoxMaxFSTSize
+            // 
+            this.textBoxMaxFSTSize.Location = new System.Drawing.Point(466, 225);
+            this.textBoxMaxFSTSize.Name = "textBoxMaxFSTSize";
+            this.textBoxMaxFSTSize.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMaxFSTSize.TabIndex = 15;
+            this.textBoxMaxFSTSize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelFSTSize
+            // 
+            this.labelFSTSize.AutoSize = true;
+            this.labelFSTSize.Location = new System.Drawing.Point(332, 202);
+            this.labelFSTSize.Name = "labelFSTSize";
+            this.labelFSTSize.Size = new System.Drawing.Size(53, 13);
+            this.labelFSTSize.TabIndex = 25;
+            this.labelFSTSize.Text = "FST Size:";
+            // 
+            // textBoxFSTSize
+            // 
+            this.textBoxFSTSize.Location = new System.Drawing.Point(466, 199);
+            this.textBoxFSTSize.Name = "textBoxFSTSize";
+            this.textBoxFSTSize.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFSTSize.TabIndex = 13;
+            this.textBoxFSTSize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelOffsetOfFST
+            // 
+            this.labelOffsetOfFST.AutoSize = true;
+            this.labelOffsetOfFST.Location = new System.Drawing.Point(332, 176);
+            this.labelOffsetOfFST.Name = "labelOffsetOfFST";
+            this.labelOffsetOfFST.Size = new System.Drawing.Size(128, 13);
+            this.labelOffsetOfFST.TabIndex = 23;
+            this.labelOffsetOfFST.Text = "Offset of the FST (fst.bin):";
+            // 
+            // textBoxOffsetOfFST
+            // 
+            this.textBoxOffsetOfFST.Location = new System.Drawing.Point(466, 173);
+            this.textBoxOffsetOfFST.Name = "textBoxOffsetOfFST";
+            this.textBoxOffsetOfFST.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOffsetOfFST.TabIndex = 11;
+            this.textBoxOffsetOfFST.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelOffsetOfMainExecutable
+            // 
+            this.labelOffsetOfMainExecutable.AutoSize = true;
+            this.labelOffsetOfMainExecutable.Location = new System.Drawing.Point(6, 228);
+            this.labelOffsetOfMainExecutable.Name = "labelOffsetOfMainExecutable";
+            this.labelOffsetOfMainExecutable.Size = new System.Drawing.Size(200, 13);
+            this.labelOffsetOfMainExecutable.TabIndex = 21;
+            this.labelOffsetOfMainExecutable.Text = "Offset of Main Executable DOL (bootfile):";
+            // 
+            // textBoxMainExecutableOffset
+            // 
+            this.textBoxMainExecutableOffset.Location = new System.Drawing.Point(208, 225);
+            this.textBoxMainExecutableOffset.Name = "textBoxMainExecutableOffset";
+            this.textBoxMainExecutableOffset.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMainExecutableOffset.TabIndex = 14;
+            this.textBoxMainExecutableOffset.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelAddressToLoadDebugMonitor
+            // 
+            this.labelAddressToLoadDebugMonitor.AutoSize = true;
+            this.labelAddressToLoadDebugMonitor.Location = new System.Drawing.Point(6, 202);
+            this.labelAddressToLoadDebugMonitor.Name = "labelAddressToLoadDebugMonitor";
+            this.labelAddressToLoadDebugMonitor.Size = new System.Drawing.Size(160, 13);
+            this.labelAddressToLoadDebugMonitor.TabIndex = 19;
+            this.labelAddressToLoadDebugMonitor.Text = "Address to Load Debug Monitor:";
+            // 
+            // textBoxAddressToLoadDebugMonitor
+            // 
+            this.textBoxAddressToLoadDebugMonitor.Location = new System.Drawing.Point(208, 199);
+            this.textBoxAddressToLoadDebugMonitor.Name = "textBoxAddressToLoadDebugMonitor";
+            this.textBoxAddressToLoadDebugMonitor.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAddressToLoadDebugMonitor.TabIndex = 12;
+            this.textBoxAddressToLoadDebugMonitor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelDebugMonitorOffset
+            // 
+            this.labelDebugMonitorOffset.AutoSize = true;
+            this.labelDebugMonitorOffset.Location = new System.Drawing.Point(6, 176);
+            this.labelDebugMonitorOffset.Name = "labelDebugMonitorOffset";
+            this.labelDebugMonitorOffset.Size = new System.Drawing.Size(149, 13);
+            this.labelDebugMonitorOffset.TabIndex = 17;
+            this.labelDebugMonitorOffset.Text = "Debug Monitor Offset (dh.bin):";
+            // 
+            // textBoxOffsetOfDebugMonitor
+            // 
+            this.textBoxOffsetOfDebugMonitor.Location = new System.Drawing.Point(208, 173);
+            this.textBoxOffsetOfDebugMonitor.Name = "textBoxOffsetOfDebugMonitor";
+            this.textBoxOffsetOfDebugMonitor.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOffsetOfDebugMonitor.TabIndex = 10;
+            this.textBoxOffsetOfDebugMonitor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelGameName
+            // 
+            this.labelGameName.AutoSize = true;
+            this.labelGameName.Location = new System.Drawing.Point(6, 44);
+            this.labelGameName.Name = "labelGameName";
+            this.labelGameName.Size = new System.Drawing.Size(69, 13);
+            this.labelGameName.TabIndex = 15;
+            this.labelGameName.Text = "Game Name:";
+            // 
+            // textBoxGameName
+            // 
+            this.textBoxGameName.Location = new System.Drawing.Point(81, 41);
+            this.textBoxGameName.Name = "textBoxGameName";
+            this.textBoxGameName.Size = new System.Drawing.Size(513, 20);
+            this.textBoxGameName.TabIndex = 2;
+            // 
+            // labelDVDMagicWord
+            // 
+            this.labelDVDMagicWord.AutoSize = true;
+            this.labelDVDMagicWord.Location = new System.Drawing.Point(332, 150);
+            this.labelDVDMagicWord.Name = "labelDVDMagicWord";
+            this.labelDVDMagicWord.Size = new System.Drawing.Size(94, 13);
+            this.labelDVDMagicWord.TabIndex = 13;
+            this.labelDVDMagicWord.Text = "DVD Magic Word:";
+            // 
+            // textBoxDVDMagicWord
+            // 
+            this.textBoxDVDMagicWord.Location = new System.Drawing.Point(466, 147);
+            this.textBoxDVDMagicWord.Name = "textBoxDVDMagicWord";
+            this.textBoxDVDMagicWord.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDVDMagicWord.TabIndex = 5;
+            this.textBoxDVDMagicWord.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelVersion
+            // 
+            this.labelVersion.AutoSize = true;
+            this.labelVersion.Location = new System.Drawing.Point(121, 150);
+            this.labelVersion.Name = "labelVersion";
+            this.labelVersion.Size = new System.Drawing.Size(45, 13);
+            this.labelVersion.TabIndex = 11;
+            this.labelVersion.Text = "Version:";
+            // 
+            // textBoxVersion
+            // 
+            this.textBoxVersion.Location = new System.Drawing.Point(172, 147);
+            this.textBoxVersion.Name = "textBoxVersion";
+            this.textBoxVersion.Size = new System.Drawing.Size(30, 20);
+            this.textBoxVersion.TabIndex = 9;
+            // 
+            // textBoxDiscID
+            // 
+            this.textBoxDiscID.Location = new System.Drawing.Point(275, 147);
+            this.textBoxDiscID.Name = "textBoxDiscID";
+            this.textBoxDiscID.Size = new System.Drawing.Size(30, 20);
+            this.textBoxDiscID.TabIndex = 7;
+            this.textBoxDiscID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelDiscID
+            // 
+            this.labelDiscID.AutoSize = true;
+            this.labelDiscID.Location = new System.Drawing.Point(224, 150);
+            this.labelDiscID.Name = "labelDiscID";
+            this.labelDiscID.Size = new System.Drawing.Size(45, 13);
+            this.labelDiscID.TabIndex = 8;
+            this.labelDiscID.Text = "Disc ID:";
+            // 
+            // textBoxMakerCode
+            // 
+            this.textBoxMakerCode.Location = new System.Drawing.Point(81, 94);
+            this.textBoxMakerCode.Name = "textBoxMakerCode";
+            this.textBoxMakerCode.Size = new System.Drawing.Size(30, 20);
+            this.textBoxMakerCode.TabIndex = 4;
+            // 
+            // labelMakerCode
+            // 
+            this.labelMakerCode.AutoSize = true;
+            this.labelMakerCode.Location = new System.Drawing.Point(6, 97);
+            this.labelMakerCode.Name = "labelMakerCode";
+            this.labelMakerCode.Size = new System.Drawing.Size(68, 13);
+            this.labelMakerCode.TabIndex = 6;
+            this.labelMakerCode.Text = "Maker Code:";
+            // 
+            // labelCountryCode
+            // 
+            this.labelCountryCode.AutoSize = true;
+            this.labelCountryCode.Location = new System.Drawing.Point(6, 124);
+            this.labelCountryCode.Name = "labelCountryCode";
+            this.labelCountryCode.Size = new System.Drawing.Size(74, 13);
+            this.labelCountryCode.TabIndex = 5;
+            this.labelCountryCode.Text = "Country Code:";
+            // 
+            // textBoxCountryCode
+            // 
+            this.textBoxCountryCode.Location = new System.Drawing.Point(81, 121);
+            this.textBoxCountryCode.Name = "textBoxCountryCode";
+            this.textBoxCountryCode.Size = new System.Drawing.Size(30, 20);
+            this.textBoxCountryCode.TabIndex = 8;
+            this.textBoxCountryCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // textBoxGameCode
+            // 
+            this.textBoxGameCode.Location = new System.Drawing.Point(81, 147);
+            this.textBoxGameCode.Name = "textBoxGameCode";
+            this.textBoxGameCode.Size = new System.Drawing.Size(30, 20);
+            this.textBoxGameCode.TabIndex = 6;
+            // 
+            // labelGameCode
+            // 
+            this.labelGameCode.AutoSize = true;
+            this.labelGameCode.Location = new System.Drawing.Point(6, 150);
+            this.labelGameCode.Name = "labelGameCode";
+            this.labelGameCode.Size = new System.Drawing.Size(66, 13);
+            this.labelGameCode.TabIndex = 2;
+            this.labelGameCode.Text = "Game Code:";
+            // 
+            // textBoxConsoleID
+            // 
+            this.textBoxConsoleID.Location = new System.Drawing.Point(81, 69);
+            this.textBoxConsoleID.Name = "textBoxConsoleID";
+            this.textBoxConsoleID.Size = new System.Drawing.Size(30, 20);
+            this.textBoxConsoleID.TabIndex = 3;
+            this.textBoxConsoleID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validateHexInput);
+            // 
+            // labelConsoleID
+            // 
+            this.labelConsoleID.AutoSize = true;
+            this.labelConsoleID.Location = new System.Drawing.Point(6, 72);
+            this.labelConsoleID.Name = "labelConsoleID";
+            this.labelConsoleID.Size = new System.Drawing.Size(62, 13);
+            this.labelConsoleID.TabIndex = 0;
+            this.labelConsoleID.Text = "Console ID:";
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -135,271 +467,6 @@
             this.openToolStripMenuItem.Text = "&Open GameCube ISO/GCM";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
-            // labelConsoleID
-            // 
-            this.labelConsoleID.AutoSize = true;
-            this.labelConsoleID.Location = new System.Drawing.Point(6, 72);
-            this.labelConsoleID.Name = "labelConsoleID";
-            this.labelConsoleID.Size = new System.Drawing.Size(62, 13);
-            this.labelConsoleID.TabIndex = 0;
-            this.labelConsoleID.Text = "Console ID:";
-            // 
-            // textBoxConsoleID
-            // 
-            this.textBoxConsoleID.Location = new System.Drawing.Point(81, 69);
-            this.textBoxConsoleID.Name = "textBoxConsoleID";
-            this.textBoxConsoleID.ReadOnly = true;
-            this.textBoxConsoleID.Size = new System.Drawing.Size(100, 20);
-            this.textBoxConsoleID.TabIndex = 3;
-            // 
-            // labelGameCode
-            // 
-            this.labelGameCode.AutoSize = true;
-            this.labelGameCode.Location = new System.Drawing.Point(6, 98);
-            this.labelGameCode.Name = "labelGameCode";
-            this.labelGameCode.Size = new System.Drawing.Size(66, 13);
-            this.labelGameCode.TabIndex = 2;
-            this.labelGameCode.Text = "Game Code:";
-            // 
-            // textBoxGameCode
-            // 
-            this.textBoxGameCode.Location = new System.Drawing.Point(81, 95);
-            this.textBoxGameCode.Name = "textBoxGameCode";
-            this.textBoxGameCode.ReadOnly = true;
-            this.textBoxGameCode.Size = new System.Drawing.Size(100, 20);
-            this.textBoxGameCode.TabIndex = 6;
-            // 
-            // textBoxCountryCode
-            // 
-            this.textBoxCountryCode.Location = new System.Drawing.Point(81, 121);
-            this.textBoxCountryCode.Name = "textBoxCountryCode";
-            this.textBoxCountryCode.ReadOnly = true;
-            this.textBoxCountryCode.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCountryCode.TabIndex = 8;
-            // 
-            // labelCountryCode
-            // 
-            this.labelCountryCode.AutoSize = true;
-            this.labelCountryCode.Location = new System.Drawing.Point(6, 124);
-            this.labelCountryCode.Name = "labelCountryCode";
-            this.labelCountryCode.Size = new System.Drawing.Size(74, 13);
-            this.labelCountryCode.TabIndex = 5;
-            this.labelCountryCode.Text = "Country Code:";
-            // 
-            // labelMakerCode
-            // 
-            this.labelMakerCode.AutoSize = true;
-            this.labelMakerCode.Location = new System.Drawing.Point(205, 72);
-            this.labelMakerCode.Name = "labelMakerCode";
-            this.labelMakerCode.Size = new System.Drawing.Size(68, 13);
-            this.labelMakerCode.TabIndex = 6;
-            this.labelMakerCode.Text = "Maker Code:";
-            // 
-            // textBoxMakerCode
-            // 
-            this.textBoxMakerCode.Location = new System.Drawing.Point(279, 69);
-            this.textBoxMakerCode.Name = "textBoxMakerCode";
-            this.textBoxMakerCode.ReadOnly = true;
-            this.textBoxMakerCode.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMakerCode.TabIndex = 4;
-            // 
-            // labelDiscID
-            // 
-            this.labelDiscID.AutoSize = true;
-            this.labelDiscID.Location = new System.Drawing.Point(205, 98);
-            this.labelDiscID.Name = "labelDiscID";
-            this.labelDiscID.Size = new System.Drawing.Size(45, 13);
-            this.labelDiscID.TabIndex = 8;
-            this.labelDiscID.Text = "Disc ID:";
-            // 
-            // textBoxDiscID
-            // 
-            this.textBoxDiscID.Location = new System.Drawing.Point(279, 95);
-            this.textBoxDiscID.Name = "textBoxDiscID";
-            this.textBoxDiscID.ReadOnly = true;
-            this.textBoxDiscID.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDiscID.TabIndex = 7;
-            // 
-            // textBoxVersion
-            // 
-            this.textBoxVersion.Location = new System.Drawing.Point(279, 121);
-            this.textBoxVersion.Name = "textBoxVersion";
-            this.textBoxVersion.ReadOnly = true;
-            this.textBoxVersion.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVersion.TabIndex = 9;
-            // 
-            // labelVersion
-            // 
-            this.labelVersion.AutoSize = true;
-            this.labelVersion.Location = new System.Drawing.Point(205, 124);
-            this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(45, 13);
-            this.labelVersion.TabIndex = 11;
-            this.labelVersion.Text = "Version:";
-            // 
-            // textBoxDVDMagicWord
-            // 
-            this.textBoxDVDMagicWord.Location = new System.Drawing.Point(494, 69);
-            this.textBoxDVDMagicWord.Name = "textBoxDVDMagicWord";
-            this.textBoxDVDMagicWord.ReadOnly = true;
-            this.textBoxDVDMagicWord.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDVDMagicWord.TabIndex = 5;
-            // 
-            // labelDVDMagicWord
-            // 
-            this.labelDVDMagicWord.AutoSize = true;
-            this.labelDVDMagicWord.Location = new System.Drawing.Point(394, 72);
-            this.labelDVDMagicWord.Name = "labelDVDMagicWord";
-            this.labelDVDMagicWord.Size = new System.Drawing.Size(94, 13);
-            this.labelDVDMagicWord.TabIndex = 13;
-            this.labelDVDMagicWord.Text = "DVD Magic Word:";
-            // 
-            // textBoxGameName
-            // 
-            this.textBoxGameName.Location = new System.Drawing.Point(81, 41);
-            this.textBoxGameName.Name = "textBoxGameName";
-            this.textBoxGameName.ReadOnly = true;
-            this.textBoxGameName.Size = new System.Drawing.Size(513, 20);
-            this.textBoxGameName.TabIndex = 2;
-            // 
-            // labelGameName
-            // 
-            this.labelGameName.AutoSize = true;
-            this.labelGameName.Location = new System.Drawing.Point(6, 44);
-            this.labelGameName.Name = "labelGameName";
-            this.labelGameName.Size = new System.Drawing.Size(69, 13);
-            this.labelGameName.TabIndex = 15;
-            this.labelGameName.Text = "Game Name:";
-            // 
-            // textBoxOffsetOfDebugMonitor
-            // 
-            this.textBoxOffsetOfDebugMonitor.Location = new System.Drawing.Point(208, 149);
-            this.textBoxOffsetOfDebugMonitor.Name = "textBoxOffsetOfDebugMonitor";
-            this.textBoxOffsetOfDebugMonitor.ReadOnly = true;
-            this.textBoxOffsetOfDebugMonitor.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOffsetOfDebugMonitor.TabIndex = 10;
-            // 
-            // labelDebugMonitorOffset
-            // 
-            this.labelDebugMonitorOffset.AutoSize = true;
-            this.labelDebugMonitorOffset.Location = new System.Drawing.Point(6, 152);
-            this.labelDebugMonitorOffset.Name = "labelDebugMonitorOffset";
-            this.labelDebugMonitorOffset.Size = new System.Drawing.Size(149, 13);
-            this.labelDebugMonitorOffset.TabIndex = 17;
-            this.labelDebugMonitorOffset.Text = "Debug Monitor Offset (dh.bin):";
-            // 
-            // textBoxAddressToLoadDebugMonitor
-            // 
-            this.textBoxAddressToLoadDebugMonitor.Location = new System.Drawing.Point(208, 175);
-            this.textBoxAddressToLoadDebugMonitor.Name = "textBoxAddressToLoadDebugMonitor";
-            this.textBoxAddressToLoadDebugMonitor.ReadOnly = true;
-            this.textBoxAddressToLoadDebugMonitor.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAddressToLoadDebugMonitor.TabIndex = 12;
-            // 
-            // labelAddressToLoadDebugMonitor
-            // 
-            this.labelAddressToLoadDebugMonitor.AutoSize = true;
-            this.labelAddressToLoadDebugMonitor.Location = new System.Drawing.Point(6, 178);
-            this.labelAddressToLoadDebugMonitor.Name = "labelAddressToLoadDebugMonitor";
-            this.labelAddressToLoadDebugMonitor.Size = new System.Drawing.Size(160, 13);
-            this.labelAddressToLoadDebugMonitor.TabIndex = 19;
-            this.labelAddressToLoadDebugMonitor.Text = "Address to Load Debug Monitor:";
-            // 
-            // textBoxMainExecutableOffset
-            // 
-            this.textBoxMainExecutableOffset.Location = new System.Drawing.Point(208, 201);
-            this.textBoxMainExecutableOffset.Name = "textBoxMainExecutableOffset";
-            this.textBoxMainExecutableOffset.ReadOnly = true;
-            this.textBoxMainExecutableOffset.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMainExecutableOffset.TabIndex = 14;
-            // 
-            // labelOffsetOfMainExecutable
-            // 
-            this.labelOffsetOfMainExecutable.AutoSize = true;
-            this.labelOffsetOfMainExecutable.Location = new System.Drawing.Point(6, 204);
-            this.labelOffsetOfMainExecutable.Name = "labelOffsetOfMainExecutable";
-            this.labelOffsetOfMainExecutable.Size = new System.Drawing.Size(200, 13);
-            this.labelOffsetOfMainExecutable.TabIndex = 21;
-            this.labelOffsetOfMainExecutable.Text = "Offset of Main Executable DOL (bootfile):";
-            // 
-            // textBoxOffsetOfFST
-            // 
-            this.textBoxOffsetOfFST.Location = new System.Drawing.Point(466, 149);
-            this.textBoxOffsetOfFST.Name = "textBoxOffsetOfFST";
-            this.textBoxOffsetOfFST.ReadOnly = true;
-            this.textBoxOffsetOfFST.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOffsetOfFST.TabIndex = 11;
-            // 
-            // labelOffsetOfFST
-            // 
-            this.labelOffsetOfFST.AutoSize = true;
-            this.labelOffsetOfFST.Location = new System.Drawing.Point(332, 152);
-            this.labelOffsetOfFST.Name = "labelOffsetOfFST";
-            this.labelOffsetOfFST.Size = new System.Drawing.Size(128, 13);
-            this.labelOffsetOfFST.TabIndex = 23;
-            this.labelOffsetOfFST.Text = "Offset of the FST (fst.bin):";
-            // 
-            // textBoxFSTSize
-            // 
-            this.textBoxFSTSize.Location = new System.Drawing.Point(466, 175);
-            this.textBoxFSTSize.Name = "textBoxFSTSize";
-            this.textBoxFSTSize.ReadOnly = true;
-            this.textBoxFSTSize.Size = new System.Drawing.Size(100, 20);
-            this.textBoxFSTSize.TabIndex = 13;
-            // 
-            // labelFSTSize
-            // 
-            this.labelFSTSize.AutoSize = true;
-            this.labelFSTSize.Location = new System.Drawing.Point(332, 178);
-            this.labelFSTSize.Name = "labelFSTSize";
-            this.labelFSTSize.Size = new System.Drawing.Size(53, 13);
-            this.labelFSTSize.TabIndex = 25;
-            this.labelFSTSize.Text = "FST Size:";
-            // 
-            // textBoxMaxFSTSize
-            // 
-            this.textBoxMaxFSTSize.Location = new System.Drawing.Point(466, 201);
-            this.textBoxMaxFSTSize.Name = "textBoxMaxFSTSize";
-            this.textBoxMaxFSTSize.ReadOnly = true;
-            this.textBoxMaxFSTSize.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaxFSTSize.TabIndex = 15;
-            // 
-            // labelMaxFSTSize
-            // 
-            this.labelMaxFSTSize.AutoSize = true;
-            this.labelMaxFSTSize.Location = new System.Drawing.Point(332, 204);
-            this.labelMaxFSTSize.Name = "labelMaxFSTSize";
-            this.labelMaxFSTSize.Size = new System.Drawing.Size(76, 13);
-            this.labelMaxFSTSize.TabIndex = 27;
-            this.labelMaxFSTSize.Text = "Max FST Size:";
-            // 
-            // labelFileName
-            // 
-            this.labelFileName.AutoSize = true;
-            this.labelFileName.Location = new System.Drawing.Point(6, 16);
-            this.labelFileName.Name = "labelFileName";
-            this.labelFileName.Size = new System.Drawing.Size(52, 13);
-            this.labelFileName.TabIndex = 28;
-            this.labelFileName.Text = "Filename:";
-            // 
-            // textBoxFileName
-            // 
-            this.textBoxFileName.Location = new System.Drawing.Point(81, 13);
-            this.textBoxFileName.Name = "textBoxFileName";
-            this.textBoxFileName.ReadOnly = true;
-            this.textBoxFileName.Size = new System.Drawing.Size(513, 20);
-            this.textBoxFileName.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 238);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(576, 129);
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -412,6 +479,20 @@
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.writeISOToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "&Edit";
+            // 
+            // writeISOToolStripMenuItem
+            // 
+            this.writeISOToolStripMenuItem.Name = "writeISOToolStripMenuItem";
+            this.writeISOToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.writeISOToolStripMenuItem.Text = "&Write ISO/GCM";
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -423,7 +504,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -431,7 +512,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 417);
+            this.ClientSize = new System.Drawing.Size(624, 441);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -439,12 +520,12 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "GameCube Iso Analyzer";
+            this.Text = "GameCube Iso Analyzer / Modifier 1.2";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,6 +572,14 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem writeISOToolStripMenuItem;
+        private System.Windows.Forms.ComboBox comboBoxConsoleID;
+        private System.Windows.Forms.ComboBox comboBoxCountryCode;
+        private System.Windows.Forms.ComboBox comboBoxMakerCode;
+        private System.Windows.Forms.CheckBox checkBoxCustomCountryCode;
+        private System.Windows.Forms.CheckBox checkBoxCustomMakerCode;
+        private System.Windows.Forms.CheckBox checkBoxCustomConsoleID;
     }
 }
 

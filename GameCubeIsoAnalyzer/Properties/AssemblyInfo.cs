@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GameCube ISO/GCM Analyzer")]
-[assembly: AssemblyDescription("This utility analyzes GameCube ISO/GCM files and displays information about the imaged disc.")]
+[assembly: AssemblyDescription("This utility analyzes a GameCube ISO/GCM files and displays as well as allowing updates/modifications to disc information, such as region, maker code, and much more.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("[sleepy9090]")]
+[assembly: AssemblyCompany("Shawn M. Crawford [sleepy9090]")]
 [assembly: AssemblyProduct("GameCubeIsoAnalyzer")]
-[assembly: AssemblyCopyright("Copyright © Shawn M. Crawford 2016")]
+[assembly: AssemblyCopyright("Copyright © Shawn M. Crawford [sleepy9090] 2015, 2016, 2017")]
 [assembly: AssemblyTrademark("[sleepy9090]")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.*")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.*")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
