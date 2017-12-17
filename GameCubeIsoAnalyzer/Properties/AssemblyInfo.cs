@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GameCube ISO/GCM Analyzer")]
-[assembly: AssemblyDescription("This utility analyzes a GameCube ISO/GCM files and displays as well as allowing updates/modifications to disc information, such as region, maker code, and much more.")]
+[assembly: AssemblyTitle("GameCube ISO/GCM Analyzer / Editor")]
+[assembly: AssemblyDescription("This utility analyzes a GameCube ISO/GCM files and displays as well as allows updates/modifications to disc information, such as region, maker code, and much more.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Shawn M. Crawford [sleepy9090]")]
 [assembly: AssemblyProduct("GameCubeIsoAnalyzer")]
-[assembly: AssemblyCopyright("Copyright © Shawn M. Crawford [sleepy9090] 2015, 2016, 2017")]
+[assembly: AssemblyCopyright("Copyright © Shawn M. Crawford [sleepy9090] 2017+")]
 [assembly: AssemblyTrademark("[sleepy9090]")]
 [assembly: AssemblyCulture("")]
 

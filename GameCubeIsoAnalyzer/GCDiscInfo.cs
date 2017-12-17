@@ -17,59 +17,132 @@ namespace GameCubeIsoAnalyzer {
         }
 
         public string getGameName() {
-            return convertHexToAscii(getHexStringFromFile(00000032, 0x3E0));
+            return convertHexToAscii(getHexStringFromFile(0x20, 0x3E0));
+        }
+
+        public bool setGameName(string gameName)
+        {
+            string hexValue = convertAsciiToHex(gameName.PadRight(0x3E0));
+            return writeByteArrayToFile(this.path, 0x20, StringToByteArray(hexValue));
         }
 
         public string getConsoleId() {
-            return getHexStringFromFile(00000000, 1);
+            return getHexStringFromFile(0x0, 0x1);
+        }
+
+        public bool setConsoleID(string consoleID)
+        {
+            return writeByteArrayToFile(this.path, 0x0, StringToByteArray(consoleID.PadLeft(0x2, '0').ToUpper()));
         }
 
         public string getGameCode() {
-            return convertHexToAscii(getHexStringFromFile(00000001, 2));
+            return convertHexToAscii(getHexStringFromFile(0x1, 0x2));
+        }
+
+        public bool setGameCode(string gameCode)
+        {
+            string hexValue = convertAsciiToHex(gameCode.PadLeft(0x2, '0'));
+            return writeByteArrayToFile(this.path, 0x1, StringToByteArray(hexValue));
         }
 
         public string getCountryCode() {
-            return getHexStringFromFile(00000003, 1);
+            return getHexStringFromFile(0x3, 0x1);
+        }
+
+        public bool setCountryCode(string countryCode)
+        {
+            return writeByteArrayToFile(this.path, 0x3, StringToByteArray(countryCode.PadLeft(0x2, '0')));
         }
 
         public string getMakerCode() {
-            return convertHexToAscii(getHexStringFromFile(00000004, 2));
+            return convertHexToAscii(getHexStringFromFile(0x4, 0x2));
+        }
+
+        public bool setMakerCode(string makerCode)
+        {
+            string hexValue = convertAsciiToHex(makerCode.PadLeft(0x2, '0'));
+            return writeByteArrayToFile(this.path, 0x4, StringToByteArray(hexValue));
         }
 
         public string getDiscId() {
-            return getHexStringFromFile(00000006, 0x1);
+            return getHexStringFromFile(0x6, 0x1);
+        }
+
+        public bool setDiscId(string discId)
+        {
+            return writeByteArrayToFile(this.path, 0x6, StringToByteArray(discId.PadLeft(0x2, '0')));
         }
 
         public string getVersion() {
-            return getHexStringFromFile(00000007, 0x1);
+            return getHexStringFromFile(0x7, 0x1);
+        }
+
+        public bool setVersion(string version)
+        {
+            return writeByteArrayToFile(this.path, 0x7, StringToByteArray(version.PadLeft(0x1, '0')));
         }
 
         public string getDVDMagicWord() {
-            return getHexStringFromFile(00000028, 0x4);
+            return getHexStringFromFile(0x1C, 0x4);
+        }
+
+        public bool setDVDMagicWord(string dvdMagicWord)
+        {
+            return writeByteArrayToFile(this.path, 0x1C, StringToByteArray(dvdMagicWord.PadLeft(0x4, '0')));
         }
 
         public string getDebugMonitorOffset() {
-            return getHexStringFromFile(00001024, 0x4);
+            return getHexStringFromFile(0x400, 0x4);
+        }
+
+        public bool setDebugMonitorOffset(string debugMonitorOffset)
+        {
+            return writeByteArrayToFile(this.path, 0x400, StringToByteArray(debugMonitorOffset.PadLeft(0x4, '0')));
         }
 
         public string getDebugMonitorLoadAddress() {
-            return getHexStringFromFile(00001028, 0x4);
+            return getHexStringFromFile(0x404, 0x4);
+        }
+
+        public bool setDebugMonitorLoadAddress(string debugMonitorLoadAddress)
+        {
+            return writeByteArrayToFile(this.path, 0x404, StringToByteArray(debugMonitorLoadAddress.PadLeft(0x4, '0')));
         }
 
         public string getMainExecutableDOLOffset() {
-            return getHexStringFromFile(00001056, 0x4);
+            return getHexStringFromFile(0x420, 0x4);
+        }
+
+        public bool setMainExecutableDOLOffset(string mainExecutableDOLOffset)
+        {
+            return writeByteArrayToFile(this.path, 0x420, StringToByteArray(mainExecutableDOLOffset.PadLeft(0x4, '0')));
         }
 
         public string getFSTOffset() {
-            return getHexStringFromFile(00001060, 0x4);
+            return getHexStringFromFile(0x424, 0x4);
+        }
+
+        public bool setFSTOffset(string fstOffset)
+        {
+            return writeByteArrayToFile(this.path, 0x424, StringToByteArray(fstOffset.PadLeft(0x4, '0')));
         }
 
         public string getFSTSize() {
-            return getHexStringFromFile(00001064, 0x4);
+            return getHexStringFromFile(0x428, 0x4);
+        }
+
+        public bool setFSTSize(string fstSize)
+        {
+            return writeByteArrayToFile(this.path, 0x428, StringToByteArray(fstSize.PadLeft(0x4, '0')));
         }
 
         public string getMaxFSTSize() {
-            return getHexStringFromFile(00001068, 0x4);
+            return getHexStringFromFile(0x42C, 0x4);
+        }
+
+        public bool setMaxFSTSize(string maxFSTSize)
+        {
+            return writeByteArrayToFile(this.path, 0x42C, StringToByteArray(maxFSTSize.PadLeft(0x4, '0')));
         }
 
         private static string convertAsciiToHex(String asciiString)

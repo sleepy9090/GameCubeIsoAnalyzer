@@ -13,9 +13,6 @@ namespace GameCubeIsoAnalyzer {
     public partial class Form1 : Form {
 
         string gamePath = "";
-        bool useCustomConsoleID = false;
-        bool useCustomMakerCode = false;
-        bool useCustomCountryCode = false;
 
         public Form1() {
             InitializeComponent();
@@ -193,6 +190,22 @@ namespace GameCubeIsoAnalyzer {
             string countryCode = gCDiscInfo.getCountryCode();
             string makerCode = gCDiscInfo.getMakerCode();
 
+            if (consoleID != "44" && consoleID != "47" && consoleID != "55")
+            {
+                checkBoxCustomConsoleID.Checked = true;
+            }
+
+            if (countryCode != "45" && countryCode != "4A" && countryCode != "50" && countryCode != "55")
+            {
+                checkBoxCustomCountryCode.Checked = true;
+            }
+
+            if (makerCode != "01" && makerCode != "08" && makerCode != "41" && makerCode != "4F" && makerCode != "51" && makerCode != "52" && makerCode != "5D" && makerCode != "5G" && makerCode != "64"
+                && makerCode != "69" && makerCode != "6S" && makerCode != "8P" && makerCode != "A4" && makerCode != "AF" && makerCode != "B2" && makerCode != "DA" && makerCode != "EM")
+            {
+                checkBoxCustomMakerCode.Checked = true;
+            }
+
             textBoxGameName.Text = gCDiscInfo.getGameName();
             textBoxConsoleID.Text = consoleID;
             textBoxCountryCode.Text = countryCode;
@@ -341,12 +354,19 @@ namespace GameCubeIsoAnalyzer {
             if(checkBoxCustomConsoleID.Checked)
             {
                 textBoxConsoleID.ReadOnly = false;
-                useCustomConsoleID = true;
             }
             else
             {
                 textBoxConsoleID.ReadOnly = true;
-                useCustomConsoleID = false;
+                string selectedValue = comboBoxConsoleID.SelectedValue.ToString();
+                if (selectedValue != "??")
+                {
+                    textBoxConsoleID.Text = selectedValue;
+                }
+                else
+                {
+                    textBoxConsoleID.Text = "00";
+                }
             }
         }
 
@@ -355,12 +375,11 @@ namespace GameCubeIsoAnalyzer {
             if (checkBoxCustomMakerCode.Checked)
             {
                 textBoxMakerCode.ReadOnly = false;
-                useCustomMakerCode = true;
             }
             else
             {
                 textBoxMakerCode.ReadOnly = true;
-                useCustomMakerCode = false;
+                textBoxMakerCode.Text = comboBoxMakerCode.SelectedValue.ToString();
             }
         }
 
@@ -369,15 +388,196 @@ namespace GameCubeIsoAnalyzer {
             if (checkBoxCustomCountryCode.Checked)
             {
                 textBoxCountryCode.ReadOnly = false;
-                useCustomCountryCode = true;
             }
             else
             {
                 textBoxCountryCode.ReadOnly = true;
-                useCustomCountryCode = false;
+                string selectedValue = comboBoxCountryCode.SelectedValue.ToString();
+                if (selectedValue != "??")
+                {
+                    textBoxCountryCode.Text = selectedValue;
+                }
+                else
+                {
+                    textBoxCountryCode.Text = "00";
+                }
             }
         }
 
+        private void writeISOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GCDiscInfo gcDiscInfo = new GCDiscInfo(gamePath);
 
+            bool result1 = gcDiscInfo.setConsoleID(textBoxConsoleID.Text);
+            bool result2 = gcDiscInfo.setCountryCode(textBoxCountryCode.Text);
+            bool result3 = gcDiscInfo.setDebugMonitorLoadAddress(textBoxAddressToLoadDebugMonitor.Text);
+            bool result4 = gcDiscInfo.setDebugMonitorOffset(textBoxOffsetOfDebugMonitor.Text);
+            bool result5 = gcDiscInfo.setDiscId(textBoxDiscID.Text);
+            bool result6 = gcDiscInfo.setDVDMagicWord(textBoxDVDMagicWord.Text);
+            bool result7 = gcDiscInfo.setFSTOffset(textBoxOffsetOfFST.Text);
+            bool result8 = gcDiscInfo.setFSTSize(textBoxFSTSize.Text);
+            bool result9 = gcDiscInfo.setGameCode(textBoxGameCode.Text);
+            bool result10 = gcDiscInfo.setGameName(textBoxGameName.Text);
+            bool result11 = gcDiscInfo.setMainExecutableDOLOffset(textBoxMainExecutableOffset.Text);
+            bool result12 = gcDiscInfo.setMakerCode(textBoxMakerCode.Text);
+            bool result13 = gcDiscInfo.setMaxFSTSize(textBoxMaxFSTSize.Text);
+            bool result14 = gcDiscInfo.setVersion(textBoxVersion.Text);
+
+            #region errorMessage
+            if (!result1 || !result2 || !result3 || !result4 || !result5 || !result6 || !result7 || !result8 || !result9 || !result10 || !result11 || !result12
+                || !result13 || !result14)
+            {
+                string errorMsg = "Unable to update: ";
+
+                if (!result1)
+                {
+                    errorMsg += "Console ID, ";
+                }
+
+                if (!result2)
+                {
+                    errorMsg += "Country Code, ";
+                }
+
+                if (!result3)
+                {
+                    errorMsg += "Debug Monitor Load Address, ";
+                }
+
+                if (!result4)
+                {
+                    errorMsg += "Debug Monitor Offset, ";
+                }
+
+                if (!result5)
+                {
+                    errorMsg += "Disc ID, ";
+                }
+
+                if (!result6)
+                {
+                    errorMsg += "DVD Magic Word, ";
+                }
+
+                if (!result7)
+                {
+                    errorMsg += "FST Offset, ";
+                }
+
+                if (!result8)
+                {
+                    errorMsg += "FST Size, ";
+                }
+
+                if (!result9)
+                {
+                    errorMsg += "Game Code, ";
+                }
+
+                if (!result10)
+                {
+                    errorMsg += "Game Name, ";
+                }
+
+                if (!result11)
+                {
+                    errorMsg += "Main Executable DOL Offset, ";
+                }
+
+                if (!result12)
+                {
+                    errorMsg += "Maker Code, ";
+                }
+
+                if (!result13)
+                {
+                    errorMsg += "Max FST Size, ";
+                }
+
+                if (!result14)
+                {
+                    errorMsg += "Version, ";
+                }
+
+                errorMsg = errorMsg.TrimEnd(' ');
+                errorMsg = errorMsg.TrimEnd(',');
+
+                MessageBox.Show("There was a problem updating the ROM header. " + errorMsg + ".",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+            }
+            else
+            {
+                MessageBox.Show("GameCube Iso updated!.",
+                    "Success",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information,
+                    MessageBoxDefaultButton.Button1);
+            }
+            #endregion
+
+            parseIsoFile(gamePath);
+
+        }
+
+        private void comboBoxConsoleID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // selected value isn't just the value on init, it is the key and value
+            string selectedValue = comboBoxConsoleID.SelectedValue.ToString();
+            if (selectedValue != "[44, 44h - D - Emulated/Ported/Promotional]")
+            {
+                if (selectedValue == "??")
+                {
+                    textBoxConsoleID.Text = "00";
+                    checkBoxCustomConsoleID.Checked = true;
+                }
+                else
+                {
+                    textBoxConsoleID.Text = selectedValue;
+                    checkBoxCustomConsoleID.Checked = false;
+                }
+            }
+        }
+
+        private void comboBoxMakerCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // selected value isn't just the value on init, it is the key and value
+            string selectedValue = comboBoxMakerCode.SelectedValue.ToString();
+
+            if (selectedValue != "[01, 01 - Nintendo]")
+            {
+                if (selectedValue == "??")
+                {
+                    textBoxMakerCode.Text = selectedValue;
+                    checkBoxCustomMakerCode.Checked = true;
+                }
+                else
+                {
+                    textBoxMakerCode.Text = selectedValue;
+                    checkBoxCustomMakerCode.Checked = false;
+                }
+            }
+        }
+
+        private void comboBoxCountryCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // selected value isn't just the value on init, it is the key and value
+            string selectedValue = comboBoxCountryCode.SelectedValue.ToString();
+            if (selectedValue != "[45, 45h - E - USA/NTSC]")
+            {
+                if (selectedValue == "??")
+                {
+                    textBoxCountryCode.Text = "00";
+                    checkBoxCustomCountryCode.Checked = true;
+                }
+                else
+                {
+                    textBoxCountryCode.Text = selectedValue;
+                    checkBoxCustomCountryCode.Checked = false;
+                }
+            }
+        }
     }
 }

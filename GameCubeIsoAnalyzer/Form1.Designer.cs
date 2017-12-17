@@ -161,6 +161,7 @@
             this.comboBoxCountryCode.Name = "comboBoxCountryCode";
             this.comboBoxCountryCode.Size = new System.Drawing.Size(250, 21);
             this.comboBoxCountryCode.TabIndex = 32;
+            this.comboBoxCountryCode.SelectedIndexChanged += new System.EventHandler(this.comboBoxCountryCode_SelectedIndexChanged);
             // 
             // comboBoxMakerCode
             // 
@@ -169,6 +170,7 @@
             this.comboBoxMakerCode.Name = "comboBoxMakerCode";
             this.comboBoxMakerCode.Size = new System.Drawing.Size(250, 21);
             this.comboBoxMakerCode.TabIndex = 31;
+            this.comboBoxMakerCode.SelectedIndexChanged += new System.EventHandler(this.comboBoxMakerCode_SelectedIndexChanged);
             // 
             // comboBoxConsoleID
             // 
@@ -177,6 +179,7 @@
             this.comboBoxConsoleID.Name = "comboBoxConsoleID";
             this.comboBoxConsoleID.Size = new System.Drawing.Size(250, 21);
             this.comboBoxConsoleID.TabIndex = 30;
+            this.comboBoxConsoleID.SelectedIndexChanged += new System.EventHandler(this.comboBoxConsoleID_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -492,6 +495,7 @@
             this.writeISOToolStripMenuItem.Name = "writeISOToolStripMenuItem";
             this.writeISOToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.writeISOToolStripMenuItem.Text = "&Write ISO/GCM";
+            this.writeISOToolStripMenuItem.Click += new System.EventHandler(this.writeISOToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -520,7 +524,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "GameCube Iso Analyzer / Modifier 1.2";
+            this.Text = "GameCube Iso Analyzer / Editor 1.2";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
