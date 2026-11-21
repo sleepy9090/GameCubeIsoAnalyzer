@@ -4,9 +4,6 @@ December 17, 2017<br/>
 
 <img width="626" height="473" alt="image" src="https://github.com/user-attachments/assets/bb7d57b1-b57c-4411-b581-58633a25a1f4" /><br/>
 
-Requires .NET Framework<br/>
-Source can be opened/built with Visual Studio 2013<br/>
-
 December 17, 2017 Version 1.1.0.32537<br/>
 Update to add write support, all fields can now be edited<br/>
 
