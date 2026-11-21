@@ -7,3 +7,14 @@ F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCu
 F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.csproj.GenerateResource.Cache
 F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.exe
 F:\Users\sleepy\Documents\visual studio 2013\Projects\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.pdb
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\bin\Release\GameCubeIsoAnalyzer.exe.config
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\bin\Release\GameCubeIsoAnalyzer.exe
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\bin\Release\GameCubeIsoAnalyzer.pdb
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.AboutBox1.resources
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.Form1.resources
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.Properties.Resources.resources
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.exe
+C:\Users\Administrator\source\repos\GameCubeIsoAnalyzer\GameCubeIsoAnalyzer\obj\Release\GameCubeIsoAnalyzer.pdb
